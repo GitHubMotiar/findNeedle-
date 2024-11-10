@@ -39,7 +39,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 
 ```
    
-    String haystack = "the quick brown fox jumps over the lazy dog the quick fox";
+    String haystack = "The quick brown fox jumps over the lazy dog the quick fox!";
 
     String[] needles = {"the", "quick", "fox", "dog", "cat"};
     
@@ -49,6 +49,8 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 ## Limitations
 
 * The method splits the haystack using whitespace and basic punctuations only `([\"\'\t\n\b\f\r])`.This does not take in commas, periods, or other punctuation marks, and may lead to incorrect word splitting and inaccurate counts.
+    !!! Tip
+    
+        Use a more inclusive regex `(split("[\\w]+"))`, which splits on any non-word character.
 
-    !!! Bug
-        In a `haystack` like `"hello world!"`, the word `"hello"` after a comma or exclamation mark is missed.
+* The method uses `compareTo`, which is case-sensitive. For a needle `there` in a `haystack` with  `"There there"`, only one occurrence is counted.
