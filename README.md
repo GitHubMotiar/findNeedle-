@@ -48,4 +48,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 ```
 ## Limitations
 
-* 
+* The method splits the haystack using whitespace and basic punctuations only `([\"\'\t\n\b\f\r])`.This does not take in commas, periods, or other punctuation marks, and may lead to incorrect word splitting and inaccurate counts.
+
+    !!! Bug
+        In a `haystack` like `"hello world!"`, the word `"hello"` after a comma or exclamation mark is missed.
