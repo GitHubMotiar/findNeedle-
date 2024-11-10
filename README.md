@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `findNeedles()` API method takes a haystack `string` and an array of search terms(`needles[]`), then counts the occurrence of each needle in the `haystack`.
+The `findNeedles()` API method takes a `haystack` string and an array of string called `needles[]`, then counts the occurrence of each needle in the `haystack` and logs the results.
 
 ## findNeedles()
 
@@ -27,7 +27,25 @@ The `findNeedles()` API method takes a haystack `string` and an array of search 
    }
 
 ```
-#### Inputs
-* haystack: `String` a string of any length.
-* 
+#### Input Parameters
+* haystack: `String` a main string in which to search for each needle.
+* needles: `String[]` an array of search terms (up to five) to locate in the haystack.
 
+#### Console Output
+* For each needle, the method logs the word `needles[]` and the the number of times it was found in the `haystack`.
+* If `needles.length` is greater than five, it logs the error "Too many words!"
+
+## Calling the API Method
+
+```
+   
+    String haystack = "the quick brown fox jumps over the lazy dog the quick fox";
+
+    String[] needles = {"the", "quick", "fox", "dog", "cat"};
+    
+    findNeedles(haystack, needles);
+
+```
+## Limitations
+
+* 
