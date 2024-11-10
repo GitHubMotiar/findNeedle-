@@ -28,6 +28,6 @@ The `findNeedles()` API method takes a haystack `string` and an array of search 
 
 ```
 #### Inputs
-* haystack: `String`
+* haystack: `String` a string of any length.
 * 
 
