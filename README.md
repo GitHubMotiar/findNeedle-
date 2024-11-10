@@ -40,9 +40,9 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 #### Console
 * For each needle, the method logs the word `needles[]` and the the number of times it was found in the `haystack`.
 * If `needles.length` is greater than five, it logs the error "Too many words!"
-* Example Output:
+<!-- * Example Output: -->
   
-  ![images](/examle_output.png)
+  <!-- ![images](/examle_output.png) -->
 
 ## Calling the API Method
 
@@ -63,6 +63,19 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
         Use a more inclusive regex `(split("[\\w]+"))`, which splits on any non-word character.
 
 * The method uses `compareTo`, which is case-sensitive. Example, "The" and "the" considered as two different words.
+
+## Test Cases
+
+<strong>Test Case 1:Basic Input</strong> 
+
+```
+   String haystack = "hello world hello everyone hello";
+   String [] needles={"hello", "world"};
+
+   findNeedles(haystack, needles);
+
+```
+
 
 
 
