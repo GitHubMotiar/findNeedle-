@@ -41,6 +41,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 * For each needle, the method logs the word `needles[]` and the the number of times it was found in the `haystack`.
 * If `needles.length` is greater than five, it logs the error "Too many words!"
 * Example Output:
+  
   ![images](/examle_output.png)
 
 ## Calling the API Method
