@@ -1,4 +1,4 @@
-# findNeedle () API Documentation
+# findNeedles () API Documentation
 
 ## Overview
 
