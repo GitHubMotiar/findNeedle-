@@ -4,6 +4,12 @@
 
 The `findNeedles()` API method takes a `haystack` string and an array of string called `needles[]`, then counts the occurrence of each needle in the `haystack` and logs the results.
 
+## Method Signature
+```yaml
+    public static void
+    findNeedles(String haystack, String[] needles)
+```
+
 ## findNeedles()
 
 ```
@@ -50,7 +56,10 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 
 * The method splits the haystack using whitespace and basic punctuations only `([\"\'\t\n\b\f\r])`.This does not take in commas, periods, or other punctuation marks, and may lead to incorrect word splitting and inaccurate counts.
     !!! Tip
-    
+
         Use a more inclusive regex `(split("[\\w]+"))`, which splits on any non-word character.
 
 * The method uses `compareTo`, which is case-sensitive. For a needle `there` in a `haystack` with  `"There there"`, only one occurrence is counted.
+
+
+
