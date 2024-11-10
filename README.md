@@ -37,9 +37,11 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 * haystack: `String` a main string in which to search for each needle.
 * needles: `String[]` an array of search terms (up to five) to locate in the haystack.
 
-#### Console Output
+#### Console
 * For each needle, the method logs the word `needles[]` and the the number of times it was found in the `haystack`.
 * If `needles.length` is greater than five, it logs the error "Too many words!"
+* Example Output:
+  ![images](/examle_output.png)
 
 ## Calling the API Method
 
@@ -59,7 +61,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 
         Use a more inclusive regex `(split("[\\w]+"))`, which splits on any non-word character.
 
-* The method uses `compareTo`, which is case-sensitive. For a needle `there` in a `haystack` with  `"There there"`, only one occurrence is counted.
+* The method uses `compareTo`, which is case-sensitive. Example, "The" and "the" considered as two different words.
 
 
 
