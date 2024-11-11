@@ -71,7 +71,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 
 ```
 
-![TestCase1](/test_1.png)
+![TestCase1](/images/Test_2.jpg)
 
 <string>Test Example 2: Case Sensitivity Checks</strong>
 `compareTo` is case-sensitive.
@@ -82,7 +82,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 
    findNeedles(haystack, needles);
 ```
- ![TestCase2](/images/Test_2.jpg)  
+ ![TestCase2](/images/Media.jpg)  
 
 ## Future Improvement
 
