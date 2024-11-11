@@ -84,15 +84,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
    findNeedles(haystack, needles)
 ```
 
-```
-    Hello,: 1
-    world!: 1
-    HELLO: 1
-    everyone.: 1
-    hello.: 1
-    hello: 0
-    world: 0
-```
+![TestCase2](/images/test_4.jpg)
 
 <strong>Test Example 3: Exceeding Needle Count Limit</strong>
 
