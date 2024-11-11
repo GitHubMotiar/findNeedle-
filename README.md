@@ -96,9 +96,9 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
     
 ```
 ### Benefits
-* Reduced Redundant Computation: `Split ()` is only called once, reducing the number regex operations.
-* Lower CPU Usage: By avoiding repeated `split() calls`, we can save CPU cycle.
-* Memory Efficiency: Reusing `words` array across iterations reduces memory allocations that would have occurred with each repeated `split()`.
+* <strong>Reduced Redundant Computation: </strong>`Split ()` is only called once, reducing the number regex operations.
+* <strong>Lower CPU Usage: </strong>By avoiding repeated `split() calls`, we can save CPU cycle.
+* <strong>Memory Efficiency:</strong> Reusing `words` array across iterations reduces memory allocations that would have occurred with each repeated `split()`.
 
 
 
