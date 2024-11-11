@@ -41,7 +41,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 * If `needles.length` is greater than five, it logs the error "Too many words!"
 
 
-## Calling the API Method
+## Calling the `findNeedles()` Method
 
 ```
    
