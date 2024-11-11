@@ -73,16 +73,28 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 
 ![TestCase1](/images/Test_2.jpg)
 
-<string>Test Example 2: Case Sensitivity Checks</strong>
+<strong>Test Example 2: Case Sensitivity Checks</strong>
+
 `compareTo` is case-sensitive.
 
 ```
    String haystack = "Hello, world! HELLO everyone. hello.";
    String [] needles={"hello", "world"};
 
-   findNeedles(haystack, needles);
+   findNeedles(haystack, needles)
 ```
- ![TestCase2](/images/test_3.jpg)  
+ ![TestCase2](/images/test_4.jpg)  
+
+<strong>Test Case Example 3: Exceeding Needle Count Limit</strong>
+
+```
+   String haystack = "hello world hello everyone";
+   String [] needles={"hello", "world", "everyone", "extra", "text", "123"};
+
+   findNeedles(haystack, needles)
+```
+![TestCase3](/images/too_many_words.png) 
+
 
 ## Future Improvement
 
