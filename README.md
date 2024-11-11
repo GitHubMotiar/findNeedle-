@@ -71,7 +71,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 
 ```
 
-![TestCase1](/images/Test_2.jpg)
+![TestCase1](/images/Example_1.png)
 
 <strong>Test Example 2: Case Sensitivity Checks</strong>
 
