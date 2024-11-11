@@ -100,10 +100,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 ## Future Improvement
 
 ```yaml
-   public static void findNeedles(String haystack, String[] needles) {
-        if (needles.length > 5) {
-            System.err.println("Too many words!");
-        } else {
+ else {
             String[] words = haystack.split("[ \"\'\t\n\b\f\r]", 0); // Splitting once before the loop
             int[] countArray = new int[needles.length];
  
