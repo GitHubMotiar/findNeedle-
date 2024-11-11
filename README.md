@@ -94,9 +94,6 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
     world: 0
 ```
 
-
- ![TestCase2](/images/test_4.jpg)  
-
 <strong>Test Example 3: Exceeding Needle Count Limit</strong>
 
 ```
