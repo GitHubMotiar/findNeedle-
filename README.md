@@ -39,9 +39,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 #### Console Output
 * For each needle, the method logs the word `needles[]` and the the number of times it was found in the `haystack`.
 * If `needles.length` is greater than five, it logs the error "Too many words!"
-<!-- * Example Output: -->
-  
-  <!-- ![images](/examle_output.png) -->
+
 
 ## Calling the API Method
 
@@ -57,11 +55,9 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 ## Limitations
 
 * The method splits the haystack using whitespace and basic punctuations only `([\"\'\t\n\b\f\r])`.This does not take in commas, periods, or other punctuation marks, and may lead to incorrect word splitting and inaccurate counts.
-    !!! Tip
-
-        Use a more inclusive regex `(split("[\\w]+"))`, which splits on any non-word character.
-
-* The method uses `compareTo`, which is case-sensitive. Example, "The" and "the" considered as two different words.
+    
+* The method uses `compareTo`, which is case-sensitive, meaning it treats "The" and "the" as different words.
+* The method only checks for the length of the needle array but does not handle other potential issues such as null inputs or empty string.
 
 ## Test Cases
 
@@ -74,6 +70,35 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
    findNeedles(haystack, needles);
 
 ```
+## Future Improvement
+
+```
+  public static void findNeedles(String haystack, String[] needles) {
+    if (needles.length > 5) {
+        System.err.println("Too many words!");
+    } else {
+        String[] words = haystack.split("[ \"\'\t\n\b\f\r]", 0); // Splitting once before the loop
+        int[] countArray = new int[needles.length];
+        
+        for (int i = 0; i < needles.length; i++) {
+            for (String word : words) {
+                if (word.compareTo(needles[i]) == 0) {
+                    countArray[i]++;
+                }
+            }
+        }
+        
+        for (int j = 0; j < needles.length; j++) {
+            System.out.println(needles[j] + ": " + countArray[j]);
+        }
+    }
+}
+    
+```
+### Benefits
+* Reduced Redundant Computation: `Split ()` is only called once, reducing the number regex operations.
+* Lower CPU Usage: By avoiding repeated `split() calls`, we can save CPU cycle.
+* Memory Efficiency: Reusing `words` array across iterations reduces memory allocations that would have occurred with each repeated `split()`.
 
 
 
