@@ -73,6 +73,17 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 
 ![TestCase1](/test_1.png)
 
+<string>Test Example 2: Case Sensitivity Checks</strong>
+`compareTo` is case-sensitive.
+
+```
+   String haystack = "Hello, world! HELLO everyone. hello.";
+   String [] needles={"hello", "world"};
+
+   findNeedles(haystack, needles);
+```
+ ![TestCase2](/images/Media.jpg)  
+
 ## Future Improvement
 
 ```yaml
