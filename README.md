@@ -117,7 +117,6 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
             }
         }
     }
-}
     
 ```
 ### Benefits
