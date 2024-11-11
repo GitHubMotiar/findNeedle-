@@ -43,7 +43,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 
 ## Calling the `findNeedles()` Method
 
-```
+```yaml
    
     String haystack = "The quick brown fox jumps over the lazy dog the quick fox!";
 
