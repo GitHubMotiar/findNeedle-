@@ -36,7 +36,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 #### Input Parameters
 * haystack: A main `String` in which to search for each needle.
 * needles: An array of `String` containing the words to search for in the haystack.
-#### Console Output
+#### Output
 * For each needle, the method logs the word `needles[]` and the the number of times it was found in the `haystack`.
 * If `needles.length` is greater than five, it logs the error "Too many words!"
 
@@ -59,9 +59,9 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 * The method uses `compareTo`, which is case-sensitive, meaning it treats "The" and "the" as different words.
 * The method only checks for the length of the needle array but does not handle other potential issues such as null inputs or empty string.
 
-## Test Cases
+## Test Examples
 
-<strong>Test Case 1: Basic Input</strong> 
+<strong>Test Example 1: Basic Input</strong> 
 
 ```
    String haystack = "hello world hello everyone hello";
@@ -70,6 +70,9 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
    findNeedles(haystack, needles);
 
 ```
+
+![TestCase1](/test_1.png)
+
 ## Future Improvement
 
 ```yaml
@@ -97,7 +100,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 ```
 ### Benefits
 * <strong>Reduced Redundant Computation: </strong>`Split ()` is only called once, reducing the number regex operations.
-* <strong>Lower CPU Usage: </strong>By avoiding repeated `split() calls`, we can save CPU cycle.
+* <strong>Lower CPU Usage: </strong>By avoiding repeated `split()` calls, we can save CPU cycle.
 * <strong>Memory Efficiency:</strong> Reusing `words` array across iterations reduces memory allocations that would have occurred with each repeated `split()`.
 
 
