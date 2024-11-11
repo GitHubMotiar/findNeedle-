@@ -82,7 +82,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 
    findNeedles(haystack, needles);
 ```
- ![TestCase2](/Media.jpg)  
+ ![TestCase2](/images/Test_2.jpg)  
 
 ## Future Improvement
 
