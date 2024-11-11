@@ -34,10 +34,9 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 
 ```
 #### Input Parameters
-* haystack: `String` a main string in which to search for each needle.
-* needles: `String[]` an array of search terms (up to five) to locate in the haystack.
-
-#### Console
+* haystack: A main `String` in which to search for each needle.
+* needles: An array of `String` containing the words to search for in the haystack.
+#### Console Output
 * For each needle, the method logs the word `needles[]` and the the number of times it was found in the `haystack`.
 * If `needles.length` is greater than five, it logs the error "Too many words!"
 <!-- * Example Output: -->
@@ -66,7 +65,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 
 ## Test Cases
 
-<strong>Test Case 1:Basic Input</strong> 
+<strong>Test Case 1: Basic Input</strong> 
 
 ```
    String haystack = "hello world hello everyone hello";
