@@ -64,8 +64,8 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 <strong>Test Example 1: Basic Input</strong> 
 
 ```
-   String haystack = "hello world hello! everyone hello";
-   String [] needles={"hello", "world"};
+   String haystack = "The quick brown fox jumps over the lazy dog. The fox is quick";
+   String [] needles={"fox", "quick", "dog", "lazy", "the"};
 
    findNeedles(haystack, needles);
 
@@ -85,7 +85,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 ```
  ![TestCase2](/images/test_4.jpg)  
 
-<strong>Test Case Example 3: Exceeding Needle Count Limit</strong>
+<strong>Test Example 3: Exceeding Needle Count Limit</strong>
 
 ```
    String haystack = "hello world hello everyone";
