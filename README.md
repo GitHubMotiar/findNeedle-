@@ -64,7 +64,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 <strong>Test Example 1: Basic Input</strong> 
 
 ```
-   String haystack = "hello world hello everyone hello";
+   String haystack = "hello world hello! everyone hello";
    String [] needles={"hello", "world"};
 
    findNeedles(haystack, needles);
@@ -82,28 +82,29 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 
    findNeedles(haystack, needles);
 ```
- ![TestCase2](/images/Media.jpg)  
+ ![TestCase2](/images/test_3.jpg)  
 
 ## Future Improvement
 
 ```yaml
-  public static void findNeedles(String haystack, String[] needles) {
-    if (needles.length > 5) {
-        System.err.println("Too many words!");
-    } else {
-        String[] words = haystack.split("[ \"\'\t\n\b\f\r]", 0); // Splitting once before the loop
-        int[] countArray = new int[needles.length];
-        
-        for (int i = 0; i < needles.length; i++) {
-            for (String word : words) {
-                if (word.compareTo(needles[i]) == 0) {
-                    countArray[i]++;
+   public static void findNeedles(String haystack, String[] needles) {
+        if (needles.length > 5) {
+            System.err.println("Too many words!");
+        } else {
+            String[] words = haystack.split("[ \"\'\t\n\b\f\r]", 0); // Splitting once before the loop
+            int[] countArray = new int[needles.length];
+ 
+            for (int i = 0; i < needles.length; i++) {
+                for (String word : words) {
+                    if (word.compareTo(needles[i]) == 0) {
+                        countArray[i]++;
+                    }
                 }
             }
-        }
-        
-        for (int j = 0; j < needles.length; j++) {
-            System.out.println(needles[j] + ": " + countArray[j]);
+ 
+            for (int j = 0; j < needles.length; j++) {
+                System.out.println(needles[j] + ": " + countArray[j]);
+            }
         }
     }
 }
