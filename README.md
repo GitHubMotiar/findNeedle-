@@ -72,7 +72,7 @@ The `findNeedles()` API method takes a `haystack` string and an array of string 
 ```
 ## Future Improvement
 
-```
+```yaml
   public static void findNeedles(String haystack, String[] needles) {
     if (needles.length > 5) {
         System.err.println("Too many words!");
